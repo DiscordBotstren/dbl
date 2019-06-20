@@ -1,0 +1,308 @@
+<html><head>
+	<title>Nasil Onayli Alinir - Discord Bots</title>
+    <link rel="stylesheet" href="../css/bulma.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="../css/fa.css" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css" rel="stylesheet" integrity="sha256-HEtF7HLJZSC3Le1HcsWbz1hDYFPZCqDhZa9QsCgVUdw=" crossorigin="anonymous">
+	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+	<link href="../css/leaderboards.css" rel="stylesheet">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-125262140-1"></script>
+	<script>
+        
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-125262140-1');
+	</script>
+
+<style>
+
+.center{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background-color: #fcbf19;
+	border-radius: 5px;
+	z-index: 101;
+}
+
+.left{
+	margin-top: 25px;
+	border-radius: 5px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	background-color: #7364B6;
+	z-index: 100;
+}
+
+.right{
+	margin-top: 25px;
+	border-radius: 5px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	background-color: #7364B6;
+	z-index: 100;
+}
+
+.user-image img{
+	border-radius: 500px;
+	width: 128px;
+	height: 128px;
+}
+
+.user-rank{
+	font-size: 30px;
+	color: #111;
+	margin-top: 5px;
+}
+
+.left .user-rank, .right .user-rank{
+	color: #fff;
+}
+
+.user-name{
+	font-weight: 300;
+	font-size: 24px;
+	margin-top: 2px;
+	color: #111;
+}
+
+.left .user-name, .right .user-name{
+	color: #fff;
+}
+
+.user-level{
+	font-weight: 300;
+	margin-bottom: 2px;
+	font-size: 23px;
+	color: #111;
+}
+
+.left .user-level, .right .user-level{
+	color: #FFF;
+}
+.user-xp{
+	font-weight: 300;
+	font-size: 22px;
+	color: #444;
+}
+
+.left .user-xp, .right .user-xp{
+	color: #eee;
+}
+
+/** Leaderboard cards **/
+.image img{
+	border-radius: 100px;
+	width: 90px;
+	height: 90px;
+	margin-bottom: -10px;
+	margin-top: -10px;
+}
+
+.image{
+	margin-right: 0px;
+	margin-left: 15px;
+}
+
+.heading{
+	font-size: 20px;
+	font-weight: 300;
+	margin-bottom: -10px;
+}
+
+.title{
+	font-size: 25px;
+	font-weight: 400;
+	margin-top: -10px;
+	color: #fcbf19;
+}
+.side-title{
+	font-size: 29px;
+	font-weight: 300;
+	margin-bottom: 10px;
+	color: #fcbf19;
+}
+
+.side-title-2{
+	font-size: 27px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	color: #fcbf19;
+}
+.reward{
+	margin-top: -15px;
+	margin-bottom: 20px;
+}
+
+.level{
+	font-size: 27px;
+	font-weight: 300;
+}
+
+.role{
+	margin-top: -30px;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+#user{
+	min-width: 40%;
+	max-width: 40%;
+	width: 40%;
+}
+
+.vv, .vv:hover{
+	color: #fcbf19 !important;
+}
+</style></head>
+
+
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+	<section class="hero is-info is-small is-bold" style="height: 400px;">
+        <div class="hero-head">
+            <nav class="navbar aos-init aos-animate" data-aos="fade-down" data-aos-easing="ease-in-out-cubic" data-aos-duration"200"="" data-aos-delay="400">
+                <div class="container">
+                    <div class="navbar-brand" id="nohover">
+                        <a class="navbar-item" href="../index.html" id="nohover">
+                            <h1 class="sheepy brand gold" id="nohover">DiscordBots</h1>
+                        </a>
+                        <span class="navbar-burger burger" data-target="navbarMenu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenu" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a href="https://discord.gg/9uU9Yuj" class="navbar-item">
+                                Discord
+                            </a>
+							                            <a href="../1.html" class="navbar-item">
+                                Bot Ekle
+                            </a>
+                                                                                                                <a href="./onaylibotnasileklenir.html" class="navbar-item">
+                                Gelistirici Takimi
+                            </a>
+                            <a href="../dokuman/index.html" class="navbar-item">
+                                Documentation
+                            </a>
+                                                         <a href="../src/premiumbolum.html" class="navbar-item">
+                                Premium Bolum Nasil Alinir ? 
+                            </a>
+                                                    </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="hero-body">
+			<div class="columns is-centered">
+				<div class="column is-1"></div>
+<center>
+				<div class="column" style="float: left; margin-top: 115px; margin-left: 45px;">
+					<h1 class="title" style="font-size: 45px; color: #fcbf19 !important;">
+						Gelistirici Takimi
+					</h1>
+				</div>
+                </center>
+			</div>
+        </div>
+    </section>
+	<br><br>
+    <div >
+        <div class=container>
+
+            <div class=spacer></div>
+            <div class=columns>
+                <div class=column>
+                    <a href=https://da532.com target=_blank>
+                        <img src="https://cdn.discordapp.com/avatars/380753087012405249/f54dea84625407dafb9661aee1d6f4d1.png?size=128" class=brand-link>
+                        <p style=color:white> xChairs </p>
+                    </a>
+                    <div class="box info-plate">
+                        <p> Merhaba ben ahmet ben nodejs,php,css ve html biliyorum ve bu yaptim projede calismakdan memnunum.</p>
+                    </div>
+                </div>
+                <div class=column>
+                    <a href=https://techfan36.org target=_blank>
+                        <img src="https://cdn.discordapp.com/attachments/532638131753844787/533639105775534090/0552dc7e5ddae2a91ac7d1ebfb34642f.png" class=brand-link>
+                        <p style=color:white;> Yunus </p>
+                    </a>
+                    <div class="box info-plate">
+                        <p> Adim Yunus Emre Findik Yasim 14 Discord Bot Coder Website Coder Ve OrtaOkul Ogrencisiyim</p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+		<style>
+			.grid-pfp{
+				width: 128px;
+				height: 128px;
+				border-radius: 100%;
+			}
+			.grid-name{
+				font-weight: bold;
+				color: #fcbf19;
+				font-size: 20px;
+				margin-top: 10px;
+			}
+			.grid-votes{
+				color: #EEE;
+				font-size: 18px;
+				margin-top: 5px;
+			}
+			.nogap{
+				margin-bottom: 0px;
+			}
+		</style>
+	<div class="page">
+		<div class="container">
+			<div class="columns" style="margin-top: 25px;">
+				<div class="column is-9">
+					<div class="columns is-multiline">
+											
+				</div>
+				<style>
+					.vote-box{
+						border-radius: 3px;
+						margin-top: 15px;
+						padding: 5px;
+						background-color: rgba(0,0,0,0.3);
+					}
+					.vote-box .is-3{
+						font-size: 35px;
+						text-align: right;
+					}
+					.vote-box .is-9{
+						text-align: left;
+						font-size: 25px;
+						line-height: 53px;
+					}
+					.vote-box.gold{
+						background: #fcbf19;
+						color: #111 !important;
+					}
+				</style>
+				<div class="column is-3">
+					
+
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body></html>
